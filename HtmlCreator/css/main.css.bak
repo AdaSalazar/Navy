@@ -1,0 +1,50 @@
+h1{
+	font-family:"Arial,sans-serif";
+	color: #28a6bf;
+	font-size: 150%;	
+}
+
+h2{
+	font-family:"Arial,sans-serif";
+	color: #21399a;
+	font-size: 130%;
+}
+
+h3{
+	font-family:"Arial,sans-serif";
+	color: #0fa7c7;
+	font-size: 110%;
+}
+
+body{
+	background-color:#e2ebef;
+}
+
+p {
+	font-family:"Arial,sans-serif";
+	font-size: 100%;
+	color: #000000;
+}
+
+#section{
+	border-top-color: pink;
+    border-top:1px dashed #238d90;
+    border-bottom:1px dashed #238d90;
+
+}
+#footer{
+	text-align: center;
+	font-family:"Arial,sans-serif";
+	font-size: 80%;
+	color:#6600FF;
+	background-color: #9999FF;
+	display: block;
+}
+#footer a:hover {background:#CC99FF;}	
+
+
+#links{
+	font-family:"Arial,sans-serif";
+} 
+#links a:hover {background:#CC99FF;}	
+#links a:visited {color:#9966CC;}
