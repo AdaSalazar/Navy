@@ -32,8 +32,11 @@
 					echo '
 						<form action="index.php?numOfChapters='.$numOfChapters.'&getP=Get+Form#getCode" method="POST">
 							<fieldset class="form">
-								<!--This is for the Title of the page and name of the file -->
-								<label><a name="getForm">Book Title</a></label>
+								<!--This is for the Title of the page -->
+								<label><a name="getForm">Name of the HTML file</a></label>
+								<input class="typing" type="text" size="50" name="fileName" value="">
+								<!--This is for the Title of the page -->
+								<label>Book Title</label>
 								<input class="typing" type="text" size="50" name="bookTitle" value="">
 								<!--This is for the Title of the page -->
 								<label>Book Description</label>
@@ -84,12 +87,13 @@ To make something bold the code is <b>BoldText</b></textarea>
 
 				//This is going to deal with the submision 
 				if(isset($_POST['getCode'])){
-					if(isset($_POST['bookTitle']) && $_POST['bookTitle']<>''){					
-						
+					if(isset($_POST['fileName']) && $_POST['fileName']<>''){					
+						$fileName = $_POST['fileName'];
 						$bookTitle = $_POST['bookTitle'];
 						$bookDescription = $_POST['bookDescription'];
 						//Changing the bookTitle to lowercase, removing spaces at the end of the string and replacing spaces for _
 						$bookName = str_replace(" ", "_", trim(strtolower($bookTitle)));
+						
 $header = '
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
@@ -98,7 +102,7 @@ $header = '
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 	<meta http-equiv="Default-Style" content="Main">
 	<title>'.$bookTitle.'</title>
-	<link rel="stylesheet" type="text/css" title="'.$bookName.'" href="css/'.$bookName.'.css">
+	<link rel="stylesheet" type="text/css" title="'.$bookName.'" href="css/main.css">
 	</head>';
 $body = '
 	<body>
@@ -112,12 +116,13 @@ $body = '
 	for ($i=1; $i<=$numOfChapters; $i++){
 		$h1Name='h1p'.$i;
 		$body= $body.'
-				<a name= "'.$i.'"><a href= "'.$bookName.'.html#chapter'.$i.'">'.$_POST[$h1Name].'</a></a><br>';
+				<a name= "'.$i.'"><a href= "'.$fileName.'.html#chapter'.$i.'">'.$_POST[$h1Name].'</a></a><br>';
 	}
 				
 	$body = 
 		$body.'	</td>
 				<td>
+					Book Cover  <br> 
 					<img src="images/'.$bookName.'.png" alt="BookCover" width="25%">
 					<br> '.$bookDescription.' <br> 
 				</td>
@@ -161,7 +166,7 @@ $body = '
 					}
 				
 						//creating the html file
-						$htmlFile = $bookName.'.html';
+						$htmlFile = $fileName.'.html';
 						$handler = fopen($htmlFile, 'w') or die('Cannot open file:  '.$htmlFile);
 						$html= $header.$body.$footer;
 						//this is wrinting the html into the file
@@ -170,7 +175,7 @@ $body = '
 						
 						//How it woul look like
 						echo '<br /><p><a name="getCode">Here is an example of how it would look like:</a></p>
-							<iframe src="'.$bookName.'.html"  width="350" height="400">
+							<iframe src="'.$fileName.'.html"  width="350" height="400">
 								<p>Your browser does not support iframes.
 							</iframe><br />
 							<a href="index.php">Create another HTML File</a></p>
