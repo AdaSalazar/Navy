@@ -55,8 +55,8 @@
 							<!--This is for the second header-->
 							<label>Sub Header (H3):</label>
 							<input class="typing" type="text" size="50" name="h3p'.$i.'" value="">
-							<!--This is for the first paragraph-->
-							<label>Paragraph Number '.$i.': </label>
+							<!--This is for the first Chapter-->
+							<label>Chapter Number '.$i.': </label>
 							<textarea class="typing" rows="5" cols="40" name="p'.$i.'">Remember that to do a list with BULLET POINTS is:
 <ul>
 	<li> item list</li>
@@ -90,15 +90,15 @@ To make something bold the code is <b>BoldText</b></textarea>
 						$bookDescription = $_POST['bookDescription'];
 						//Changing the bookTitle to lowercase, removing spaces at the end of the string and replacing spaces for _
 						$bookName = str_replace(" ", "_", trim(strtolower($bookTitle)));
-$header = '
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+$header = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-	<meta http-equiv="Default-Style" content="Main">
-	<title>'.$bookTitle.'</title>
-	<link rel="stylesheet" type="text/css" title="'.$bookName.'" href="css/'.$bookName.'.css">
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+		<meta http-equiv="Default-Style" content="Main">
+		<title>'.$bookTitle.'</title>
+		<link rel="stylesheet" type="text/css" title="Main" 
+		href="css/'.$bookName.'.css">
 	</head>';
 $body = '
 	<body>
