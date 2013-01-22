@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#660099"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+     <ImageView
+         android:id="@+id/idivLogo"
+         android:layout_width="296dp"
+         android:layout_height="352dp"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="80dp"
+         android:contentDescription="@string/ivlogotext"
+         android:src="@drawable/logo_royal_navy" />
+      <Button
+         android:id="@+id/idbTRM"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+       	 android:layout_marginLeft="450dp"
+       	 android:layout_above="@+id/idbBH"
+         android:text="@string/btrm" 
+         android:textSize="35sp"/>
+     <Button
+        android:id="@+id/idbBH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idbTRM"
+        android:layout_alignRight="@+id/idbTRM"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="45dp"        
+        android:text="@string/bbh"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/idbTR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idbBH"
+        android:layout_alignRight="@+id/idbBH"
+        android:layout_below="@+id/idbBH"
+        android:layout_marginTop="45dp"
+        android:text="@string/btr" 
+        android:textSize="35sp"/>
+
+</RelativeLayout>

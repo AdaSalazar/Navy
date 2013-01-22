@@ -1,0 +1,160 @@
+h1{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #000000 ;
+	font-size: 200%;
+	margin: 0;
+	padding: 0 0 1em 0;
+}
+
+h2{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #000000 ;
+	font-size: 175%;
+}
+
+body{
+	background-color:#FFFFFF;
+}
+
+table { 
+	border-color: #555555; 	
+	border-style: double ridge;	
+	padding:5px; 
+	font-size: 115%;
+} 
+
+label{
+	display:block;	
+}
+
+fieldset.form{
+	border:none; 
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #000000 ;
+	font-size: 130%;
+}
+fieldset{
+	border:none; 
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #000000 ;
+	font-size: 130%;
+}
+p {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 130%;
+	color: 	#282828;
+
+}
+.btn{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 1.5em;
+}
+.typing{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 115%;
+}
+
+#highlight{
+	background-color:#00FFFF;
+	font-size: 145%;
+	text-align: center;
+}
+#highlightbad{
+	background-color:#FF0000;
+	font-size: 145%;
+	color: #FFFF00;
+	text-align: center;	
+}
+
+#footer{
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 120%;
+	color:#6600FF;
+	background-color: #E0E0E0 ;
+	display: block;
+}
+#footer a:hover {background:#FFFF33;}	
+#wrapper {
+	position: relative;
+	text-align: left;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+
+#navigationTabs
+{
+	text-align: right;
+	font-size: 110%;
+}
+#navigationTabs a:hover {background:#FFFF33;}
+
+#navigation
+{
+	text-align: right;
+	font-size: 110%;
+}
+#navigation a:hover {background:#FFFF33;}
+
+#QuickLinks
+{
+	text-align: right;
+	font-size: 100%;
+}
+#QuickLinks a:hover {background:#FFFF33;}	
+	
+#links{
+font-family: "Comic Sans MS", cursive, sans-serif;
+} 
+#links a:hover {background:#FFFF33;}	
+#links a:visited {color:#9966CC;}
+
+ul.a {list-style-type: circle;}
+
+#tabs ul {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: black;
+	list-style: none;
+	padding:0;
+	margin:0;
+	font-size: 120%
+}
+#tabs li {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	float: left;
+	border: 1px solid;
+	border-bottom-width: 0;
+	display: inline;
+	border-width: 2px 2px 0 2px;
+	margin: 0 0.5em 0 0;
+	font-size: 110%
+}
+
+#tabs li a {
+	padding: 0 1em;
+}
+#tabs a:hover{background:#FFFF33;}
+
+#tabContent {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 120%;
+	border: 2px solid black;
+	clear: both;
+	padding: 1em;
+	font-size: 130%
+}
+
+#tabs #selected {
+	padding-bottom: 1px; 
+	background: #A8A8A8;
+	position: relative;
+	top: 1px;
+}
+
+#bigText{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #663399;
+	font-size: 130%;
+}
