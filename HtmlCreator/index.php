@@ -106,20 +106,27 @@ $body = '
 		<h2>Table Of Contents</h2>
 		<table>
 			<tr>
-				<td>	
+				<td width="30%">	
 				<!--In here it goes the number of the chapter "chapter#" This is for the Index links later!-->';
 				
 	for ($i=1; $i<=$numOfChapters; $i++){
 		$h1Name='h1p'.$i;
 		$body= $body.'
-				<a name= "'.$i.'"><a href= "'.$bookName.'.html#chapter'.$i.'">'.$_POST[$h1Name].'</a></a><br>';
+					<div id="tableLink">
+						<!-- in case that the link with the webpage is needed
+						<a name="'.$i.'" href="'.$bookName.'.html#chapter'.$i.'">'.$_POST[$h1Name].'</a><br>-->
+						<a name="'.$i.'" href="#chapter'.$i.'">'.$_POST[$h1Name].'</a><br>
+					</div>';
 	}
 				
 	$body = 
-		$body.'	</td>
-				<td>
-					<img src="images/'.$bookName.'.png" alt="BookCover" width="25%">
+		$body.'	
+				</td>
+				<td width="70%">
+					<p class="description">
+					<img src="images/'.$bookName.'.png" alt="BookCover" width="80%">
 					<br> '.$bookDescription.' <br> 
+					</p>
 				</td>
 			</tr>
 		</table>';
