@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#660099"
+    >
+
+    <WebView
+        android:id="@+id/wvBook"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/idbback"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/idbback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/bBack"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/etToFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/wvBook"
+        android:layout_toLeftOf="@+id/idbSearch"
+        android:ems="10"
+        android:hint="@string/etToFindHint"
+        android:imeOptions="actionSearch" />
+
+    <Button
+        android:id="@+id/idbSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/idbback"
+        android:text="@string/bSearch"
+        android:textSize="25sp" />
+
+</RelativeLayout>
