@@ -15,6 +15,8 @@ public class Splash extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.splash);
+
+		
 		mpIntroSound = MediaPlayer.create(this, R.raw.logo_sound);
 		mpIntroSound.start();
 		 
@@ -33,7 +35,6 @@ public class Splash extends Activity {
 					//The intent has to match action name part in the Manifest.xml <intent-filter> section
 					Intent openMenu = new Intent("ada.salazar.TRiM.MENU");
 					//To create an Intent name is PackageName.CLASSNAME
-					
 					startActivity(openMenu); 
 				}//try
 				

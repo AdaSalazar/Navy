@@ -13,12 +13,6 @@
 		<h2>Table Of Contents</h2>
 		<table>
 			<tr>
-				<td width="70%">
-					<p class="description">
-					<img src="images/coming_home.png" alt="BookCover" width="80%">
-					<br> Book description here <br> 
-					</p>
-				</td>
 				<td width="30%">	
 				<!--In here it goes the number of the chapter "chapter#" This is for the Index links later!-->
 					<div id="tableLink">
@@ -41,6 +35,12 @@
 						<a name="4" href="trim.html#chapter4"></a><br>-->
 						<a name="4" href="#chapter4">chapter4</a><br>
 					</div>	
+				</td>
+				<td width="70%">
+					<p class="description">
+					<img src="images/coming_home.png" alt="BookCover" width="80%">
+					<br> Book description here <br> 
+					</p>
 				</td>
 			</tr>
 		</table>	
