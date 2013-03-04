@@ -11,9 +11,25 @@ public final class R {
     public static final class attr {
     }
     public static final class drawable {
-        public static final int ic_action_search=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int logo_royal_navy=0x7f020002;
+        public static final int bodyhandling1=0x7f020000;
+        public static final int bodyhandling2=0x7f020001;
+        public static final int bodyhandling3=0x7f020002;
+        public static final int bodyhandlingb=0x7f020003;
+        public static final int cominghome1=0x7f020004;
+        public static final int cominghome2=0x7f020005;
+        public static final int cominghome3=0x7f020006;
+        public static final int cominghomeb=0x7f020007;
+        public static final int ic_action_search=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int logo_royal_navy=0x7f02000a;
+        public static final int traumaresilience1=0x7f02000b;
+        public static final int traumaresilience2=0x7f02000c;
+        public static final int traumaresilience3=0x7f02000d;
+        public static final int traumaresilienceb=0x7f02000e;
+        public static final int trim1=0x7f02000f;
+        public static final int trim2=0x7f020010;
+        public static final int trim3=0x7f020011;
+        public static final int trimb=0x7f020012;
     }
     public static final class id {
         public static final int etToFind=0x7f080002;

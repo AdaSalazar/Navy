@@ -1,60 +1,57 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#ffff99"
-    android:gravity="left"
-    android:orientation="vertical" >
+    android:orientation="horizontal"
+    android:weightSum="10" >
 
-     <ImageView
-         android:id="@+id/idivLogo"
-         android:layout_width="385dp"
-         android:layout_height="457dp"
-         android:layout_centerVertical="true"
-         android:layout_marginLeft="80dp"
-         android:contentDescription="@string/ivlogotext"
-         android:src="@drawable/logo_royal_navy" />
-     
-      <Button
-         android:id="@+id/idbTRM"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-       	 android:layout_marginLeft="600dp"
-       	 android:layout_marginTop="115dp"
-         android:text="@string/btrm" 
-         android:textSize="50sp"/>
-      
-     <Button
-        android:id="@+id/idbBH"
+    <ImageView
+        android:id="@+id/idivLogo"
+        android:layout_width="385dp"
+        android:layout_height="457dp"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:contentDescription="@string/ivlogotext"
+        android:src="@drawable/logo_royal_navy" />
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/idbTRM"
-        android:layout_alignRight="@+id/idbTRM"
-        android:layout_below="@+id/idbTRM"
-        android:layout_marginTop="55dp"
-        android:textSize="50sp"        
-        android:text="@string/bbh" />
+        android:layout_gravity="center_vertical"
+        android:layout_weight="6"
+        android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/idbTR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/idbBH"
-        android:layout_alignRight="@+id/idbBH"
-        android:layout_below="@+id/idbBH"
-        android:layout_marginTop="55dp" 
-        android:textSize="50sp"        
-        android:text="@string/btr"/>
-    
-    <Button
-        android:id="@+id/idbCH"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/idbTR"
-        android:layout_alignRight="@+id/idbTR"
-        android:layout_below="@+id/idbTR"
-        android:layout_marginTop="55dp"
-        android:textSize="50sp"
-        android:text="@string/bch" />
+        <Button
+            android:id="@+id/idbTRM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/trimb" />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/idbTR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/traumaresilienceb" />
+
+        <Button
+            android:id="@+id/idbBH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bodyhandlingb" />
+
+        <Button
+            android:id="@+id/idbCH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/cominghomeb" />
+    </LinearLayout>
+
+</LinearLayout>
